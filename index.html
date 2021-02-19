@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>javascript sample page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="hide_para()">
+     <h1 onclick="show_para(this)"> Section 1 </h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus minus reprehenderit a sint suscipit officiis ipsa quis veniam voluptatum, accusantium vel esse? Sit dolor eos rem, soluta quos minima exercitationem.</p>
+     <h1 onclick="show_para(this)">Section 2</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui placeat rerum asperiores ex ratione amet nihil, neque fuga explicabo quasi impedit in vel itaque assumenda, esse sint facilis, iure repudiandae.</p>
+     <h1 onclick="show_para(this)">Section 3</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat doloremque facere vero illo, alias ratione consectetur impedit accusamus aperiam expedita recusandae animi repellendus cupiditate placeat eveniet modi, illum autem earum!</p>
+    <script type="text/javascript">
+        function hide_para(){
+            para = document.querySelectorAll("p");
+            for(i=0;i<para.length;i++){
+                //console.log(para[i])
+            para[i].style.display="none"
+            } 
+        }
+        function show_para(curEle){
+           // console.log(curEle)
+           ans = curEle.nextElementSibling.style.display;
+        if(ans=="none"){
+            curEle.nextElementSibling.style.display="block";
+        }
+        else{
+            curEle.nextElementSibling.style.display="none";  
+        }
+        }
+
+    </script>
+    </body> 

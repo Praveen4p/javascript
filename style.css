@@ -1,0 +1,7 @@
+h1,p {
+    width: 500px;
+    border: 1pxsolid green;
+    margin: 0px, auto;
+    padding: 10px;
+    background-color: salmon;
+}
